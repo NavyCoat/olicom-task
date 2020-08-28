@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 
 namespace App\GitHubViewer\Presentation\Console;
 
@@ -27,14 +27,14 @@ class DisplayUserDetailsCommand extends Command
         parent::__construct();
     }
 
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setDescription('Display GitHub user details.')
             ->addArgument('login', InputArgument::REQUIRED, 'GitHub user login.');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         try {
             $view = $this->githubViewer->getUserDetailsView($input->getArgument('login'));

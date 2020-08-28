@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 
 namespace App\GitHubViewer\Presentation\Rest;
 
@@ -25,7 +25,7 @@ class RestController
     /**
      * @Route("/v1/repositories/{ownerLogin}/{repositoryName}", name="repo_view")
      */
-    public function viewRepostioryAction(string $ownerLogin, string $repositoryName)
+    public function viewRepostioryAction(string $ownerLogin, string $repositoryName): JsonResponse
     {
         $view = $this->githubViewer->getRepositoryView($ownerLogin, $repositoryName);
 
@@ -35,7 +35,7 @@ class RestController
     /**
      * @Route("/v1/users/{login}", name="user_view")
      */
-    public function viewUserAction(string $login)
+    public function viewUserAction(string $login): JsonResponse
     {
         $view = $this->githubViewer->getUserDetailsView($login);
 

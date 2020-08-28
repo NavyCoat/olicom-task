@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 
 namespace App\GitHubViewer\Application;
 
@@ -58,7 +58,7 @@ class UserDetailsViewModel implements \JsonSerializable
         return $this->createdAt;
     }
 
-    public function jsonSerialize()
+    public function jsonSerialize(): array
     {
         return [
             'name' => $this->name,
