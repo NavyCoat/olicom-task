@@ -1,7 +1,9 @@
 # Zadanie rekrutacyjnego dla olicom
 
 ## Jak uruchomić
+
 ```
+$ symfony local:server:ca:install
 $ symfony local:server:start
 ```
 
