@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Application\GitHubViewer;
+namespace App\GitHubViewer\Application;
 
 
 class RepositoryViewModel implements \JsonSerializable

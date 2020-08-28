@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Presentation\Rest;
+namespace App\GitHubViewer\Presentation\Rest;
 
 
-use App\Application\GitHubViewer\ApplicationFacade;
+use App\GitHubViewer\Application\ApplicationFacade;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 

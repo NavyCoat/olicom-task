@@ -1,5 +1,5 @@
 controllers:
-    resource: ../../src/Presentation/Rest/
+    resource: ../../src/GitHubViewer/Presentation/Rest/
     type: annotation
 
 kernel:

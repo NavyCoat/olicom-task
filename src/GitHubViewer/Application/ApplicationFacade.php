@@ -1,9 +1,11 @@
 <?php
 
 
-namespace App\Application\GitHubViewer;
+namespace App\GitHubViewer\Application;
 
 
+use App\GitHubViewer\Application\RepositoryViewModel;
+use App\GitHubViewer\Application\UserDetailsViewModel;
 use Github\Client;
 
 class ApplicationFacade
