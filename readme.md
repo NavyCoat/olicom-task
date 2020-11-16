@@ -1,4 +1,4 @@
-# Zadanie rekrutacyjnego dla olicom
+# Zadanie rekrutacyjne dla olicom
 
 ## Jak uruchomić
 
