@@ -18,7 +18,7 @@ GET https://127.0.0.1:8000/v1/users/fabpot
 ```
 
 ## Założenia i zastosowane podejście.
-- Zadanie stricte opiera się na pozyskiwaniu GitHubowych
+- Zadanie stricte opiera się na pozyskiwaniu GitHubowych ifnoramcji o repo i userach
 - Jest to proxy na GitHuba gdzie stworzyliśmy sobie miejsce na ewentualne zapisywanie i customową politykę keszowania.
 - Nie przejmuję się limitami odpytań w tym zadaniu.
 
